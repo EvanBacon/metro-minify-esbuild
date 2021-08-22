@@ -1,6 +1,6 @@
 {
   "name": "metro-minify-esbuild",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "🚇 Minifier for Metro based on ESBuild",
   "main": "src/index.js",
   "repository": {
