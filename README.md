@@ -35,9 +35,13 @@ module.exports = config;
 
 ## Performance
 
+### Hello World
+
 The following is a base project generated with `expo init my-app`, then bundled for production with Metro:
 
-### Before
+#### Before
+
+(uglify)
 
 Roughly ~12 seconds, and 833kb.
 
@@ -49,7 +53,9 @@ Bundle                Size
 └ index.ios.js.map  3.3 MB
 ```
 
-### After
+#### After
+
+(esbuild)
 
 Roughly ~9.8 seconds, and 840kb.
 
@@ -61,4 +67,36 @@ iOS Bundling complete 9751ms
 Bundle                 Size
 ┌ index.ios.js       840 kB
 └ index.ios.js.map  2.46 MB
+```
+
+### Kitchen Sink
+
+#### Before
+
+(uglify)
+
+~151 seconds.
+
+```
+iOS Bundling complete 151312ms
+Copying 112 ios assets
+
+Bundle                 Size
+┌ index.ios.js      8.99 MB
+└ index.ios.js.map  26.2 MB
+```
+
+#### After
+
+(esbuild)
+
+~53 seconds (about 3x faster), 4kb bigger.
+
+```
+iOS Bundling complete 52952ms
+Copying 112 ios assets
+
+Bundle                 Size
+┌ index.ios.js      9.03 MB
+└ index.ios.js.map  17.8 MB
 ```
