@@ -71,6 +71,8 @@ Bundle                 Size
 
 ### Kitchen Sink
 
+Bundling the Expo [Native Component List](https://github.com/expo/expo/tree/master/apps/native-component-list) (everything).
+
 #### Before
 
 (uglify)
@@ -90,7 +92,7 @@ Bundle                 Size
 
 (esbuild)
 
-~53 seconds (about 3x faster), 4kb bigger.
+~53 seconds (about 3x faster), 4kb bigger. This one can change a lot in time, sometimes when the computer is running very slow it's closer to 100s, still substantially faster than uglify.
 
 ```
 iOS Bundling complete 52952ms
