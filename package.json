@@ -1,0 +1,14 @@
+{
+  "name": "metro-minify-esbuild",
+  "version": "0.0.0",
+  "description": "🚇 Minifier for Metro based on ESBuild",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:EvanBacon/metro-minify-esbuild.git"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "esbuild": "^0.12.22"
+  }
+}
