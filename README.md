@@ -102,3 +102,15 @@ Bundle                 Size
 ┌ index.ios.js      9.03 MB
 └ index.ios.js.map  17.8 MB
 ```
+
+## Troubleshooting
+
+> `error: Invalid option in transform() call: "mangle"`
+
+Metro passes default options to the minifier because it expects uglify to be used, simply reset them in your `metro.config.js`
+
+```js
+config.transformer.minifierConfig = {
+  // ESBuild options...
+};
+```
