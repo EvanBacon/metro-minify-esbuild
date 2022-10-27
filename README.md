@@ -33,6 +33,17 @@ config.transformer.minifierConfig = {
 module.exports = config;
 ```
 
+## Remove Console Logs
+
+You can automatically remove `console.log` statements using the following configuration:
+
+```js
+config.transformer.minifierConfig = {
+  // ESBuild options...
+  drop: ["console"],
+};
+```
+
 ## Performance
 
 ### Hello World
