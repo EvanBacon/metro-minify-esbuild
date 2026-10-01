@@ -9,6 +9,6 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "esbuild": "^0.12.22"
+    "esbuild": ">=0.12.22 <1"
   }
 }
